@@ -1,5 +1,7 @@
 # Cute Phonics 🐸🥒 — Baby Animals Reading Game
 
+https://aurelius-in.github.io/Cute_reader/
+
 A tiny phonics game to help an 8-year-old learn to read using cute animals and pickles.  
 Runs entirely in the browser. Perfect for GitHub Pages and phones.
 
