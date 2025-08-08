@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Cute Phonics: Animals, Frogs & Pickles 🐸🥒</title>
+  <link rel="preconnect" href="https://placekitten.com">
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#fef6ff" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>🐸 Cute Phonics 🥒</h1>
+    <button id="btnReset" class="ghost small" aria-label="Reset progress">Reset</button>
+  </header>
+
+  <main id="app" class="app">
+    <section class="card game">
+      <div class="topbar">
+        <div class="level">
+          <label for="levelSelect">Level:</label>
+          <select id="levelSelect" aria-label="Choose phonics level"></select>
+        </div>
+        <div class="score" aria-live="polite">
+          ⭐ <span id="scoreVal">0</span>
+        </div>
+      </div>
+
+      <figure class="prompt">
+        <img id="promptImg" alt="" />
+        <figcaption id="promptCaption">Listen and choose the word!</figcaption>
+      </figure>
+
+      <div class="controls">
+        <button id="btnHearWord" class="primary">🔊 Hear word</button>
+        <button id="btnHearSounds" class="secondary">🗣️ Hear sounds</button>
+      </div>
+
+      <div id="choices" class="choices" role="group" aria-label="Answer choices"></div>
+
+      <div id="feedback" class="feedback" aria-live="polite"></div>
+    </section>
+
+    <section class="card stickers">
+      <h2>Sticker Book</h2>
+      <div id="stickerRow" class="sticker-row"></div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <small>Tip: tap “Hear sounds” to hear each sound in the word (c-a-t → cat).</small>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
